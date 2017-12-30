@@ -6,5 +6,6 @@
     <RemoteDebugMachine>minwinpc</RemoteDebugMachine>
     <RemoteDebugEnabled>true</RemoteDebugEnabled>
     <UseAuthentication>false</UseAuthentication>
+    <AuthenticationMode>Universal</AuthenticationMode>
   </PropertyGroup>
 </Project>

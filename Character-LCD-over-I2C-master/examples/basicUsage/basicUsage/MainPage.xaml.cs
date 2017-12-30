@@ -81,13 +81,13 @@ namespace basicUsage
             lcd.createSymbol(new byte[] { 0x00, 0x00, 0x0A, 0x00, 0x11, 0x0E, 0x00, 0x00 }, 0x00);
             
             // Here is printed string
-            lcd.prints("Good morning,");
+            lcd.prints("Goede avond,");
             
             // Navigation to second line
             lcd.gotoxy(0, 1);
             
             // Here is printed string
-            lcd.prints("gentlemans");
+            lcd.prints("hier is Wim ");
             
             // Here is printed our new symbol (emoticon)
             lcd.printSymbol(0x00);

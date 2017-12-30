@@ -1,1 +1,0 @@
-C:\Users\jeba_\source\repos\RaspbPi\Character-LCD-over-I2C-master\examples\basicUsage\basicUsage\basicUsage.csproj;arm
