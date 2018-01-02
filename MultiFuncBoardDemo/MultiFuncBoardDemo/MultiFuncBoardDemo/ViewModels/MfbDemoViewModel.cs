@@ -16,7 +16,13 @@ namespace MultiFuncBoardDemo.ViewModels
             _switchPressedFill = new SolidColorBrush(Colors.Red);
             _buzzerSoundFill = new SolidColorBrush(Colors.Blue);
             _transpFill = new SolidColorBrush(Colors.Transparent);
+
+            ////Only to test the binding is correct, uncomment the code below
+            //LedD1State = LedD2State = LedD3State = LedD4State = true;
+            //BuzzerSound = true;
+            //SwitchS1Pressed = SwitchS2Pressed = SwitchS3Pressed = true;
         }
+
         private bool _ledD1State;
         public bool LedD1State
         {
@@ -41,6 +47,7 @@ namespace MultiFuncBoardDemo.ViewModels
                 if (_ledD2State != value)
                 {
                     _ledD2State = value;
+                    LedD2StateFill = _ledD2State ? _ledTrueFill : _transpFill;
                 }
             }
         }
@@ -54,6 +61,7 @@ namespace MultiFuncBoardDemo.ViewModels
                 if (_ledD3State != value)
                 {
                     _ledD3State = value;
+                    LedD3StateFill = _ledD3State ? _ledTrueFill : _transpFill;
                 }
             }
         }
@@ -67,6 +75,7 @@ namespace MultiFuncBoardDemo.ViewModels
                 if (_ledD4State != value)
                 {
                     _ledD4State = value;
+                    LedD4StateFill = _ledD4State ? _ledTrueFill : _transpFill;
                 }
             }
         }
@@ -137,7 +146,7 @@ namespace MultiFuncBoardDemo.ViewModels
                 if (_switchS1Pressed != value)
                 {
                     _switchS1Pressed = value;
-                    SwitchS1PressedFill = _switchS1Pressed ? _ledTrueFill : _transpFill;
+                    SwitchS1PressedFill = _switchS1Pressed ? _switchPressedFill : _transpFill;
                 }
             }
         }
@@ -151,7 +160,7 @@ namespace MultiFuncBoardDemo.ViewModels
                 if (_switchS2Pressed != value)
                 {
                     _switchS2Pressed = value;
-                    SwitchS2PressedFill = _switchS2Pressed ? _ledTrueFill : _transpFill;
+                    SwitchS2PressedFill = _switchS2Pressed ? _switchPressedFill : _transpFill;
                 }
             }
         }
@@ -165,7 +174,7 @@ namespace MultiFuncBoardDemo.ViewModels
                 if (_switchS3Pressed != value)
                 {
                     _switchS3Pressed = value;
-                    SwitchS3PressedFill = _switchS3Pressed ? _ledTrueFill : _transpFill;
+                    SwitchS3PressedFill = _switchS3Pressed ? _switchPressedFill : _transpFill;
                 }
             }
         }
@@ -223,7 +232,7 @@ namespace MultiFuncBoardDemo.ViewModels
                 if (_buzzerSound != value)
                 {
                     _buzzerSound = value;
-                    SwitchS3PressedFill = _buzzerSound ? _ledTrueFill : _transpFill;
+                    BuzzerSoundFill = _buzzerSound ? _buzzerSoundFill : _transpFill;
                 }
             }
         }

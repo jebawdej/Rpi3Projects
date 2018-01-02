@@ -5,6 +5,7 @@
     xmlns:local="using:MultiFuncBoardDemo.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    DataContext="{Binding MfbDemoInstance, Source={StaticResource Locator}}"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -18,14 +19,14 @@
                 <Border  Canvas.Left="130" Canvas.Top="52" Canvas.ZIndex="2">
                     <TextBlock x:Name="LedDisplayFG"  Text="1234" Height="140" Width="301" FontFamily="ms-appx:///Assets/Fonts/digital-7 (mono).TTF#Digital-7 Mono" FontSize="160" Foreground="Red"/>
                 </Border>
-                <Ellipse Name="Buzzer" Height="100" Canvas.Left="149" Canvas.Top="339" Canvas.ZIndex="10" Width="100" Fill="Blue"/>
-                <Rectangle Name="LedD1" Height="10" Width="26" Canvas.Left="377" Canvas.Top="310" Canvas.ZIndex="10" Fill="LightGreen"/>
-                <Rectangle Name="LedD2" Height="10" Width="26" Canvas.Left="377" Canvas.Top="333" Canvas.ZIndex="10" Fill="LightGreen"/>
-                <Rectangle Name="LedD3" Height="10" Width="26" Canvas.Left="377" Canvas.Top="358" Canvas.ZIndex="10" Fill="LightGreen"/>
-                <Rectangle Name="LedD4" Height="10" Width="26" Canvas.Left="377" Canvas.Top="384" Canvas.ZIndex="10" Fill="LightGreen"/>
-                <Ellipse Name="SwitchS1" Height="38" Canvas.Left="87" Canvas.Top="623" Canvas.ZIndex="10" Width="37" Fill="Red"/>
-                <Ellipse Name="SwitchS2" Height="38" Canvas.Left="179" Canvas.Top="623" Canvas.ZIndex="10" Width="37" Fill="Red"/>
-                <Ellipse Name="SwitchS3" Height="38" Canvas.Left="273" Canvas.Top="623" Canvas.ZIndex="10" Width="37" Fill="Red"/>
+                <Ellipse Name="Buzzer" Height="100" Canvas.Left="149" Canvas.Top="339" Canvas.ZIndex="10" Width="100" Fill="{Binding BuzzerSoundFill}"/>
+                <Rectangle Name="LedD1" Height="10" Width="26" Canvas.Left="377" Canvas.Top="310" Canvas.ZIndex="10" Fill="{Binding LedD1StateFill}"/>
+                <Rectangle Name="LedD2" Height="10" Width="26" Canvas.Left="377" Canvas.Top="333" Canvas.ZIndex="10" Fill="{Binding LedD2StateFill}"/>
+                <Rectangle Name="LedD3" Height="10" Width="26" Canvas.Left="377" Canvas.Top="358" Canvas.ZIndex="10" Fill="{Binding LedD3StateFill}"/>
+                <Rectangle Name="LedD4" Height="10" Width="26" Canvas.Left="377" Canvas.Top="384" Canvas.ZIndex="10" Fill="{Binding LedD4StateFill}"/>
+                <Ellipse Name="SwitchS1" Height="38" Canvas.Left="87" Canvas.Top="623" Canvas.ZIndex="10" Width="37" Fill="{Binding SwitchS1PressedFill}"/>
+                <Ellipse Name="SwitchS2" Height="38" Canvas.Left="179" Canvas.Top="623" Canvas.ZIndex="10" Width="37" Fill="{Binding SwitchS2PressedFill}"/>
+                <Ellipse Name="SwitchS3" Height="38" Canvas.Left="273" Canvas.Top="623" Canvas.ZIndex="10" Width="37" Fill="{Binding SwitchS3PressedFill}"/>
             </Canvas>
         </Viewbox>
         <TextBlock Text="Created by: Wim de Jong" FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="25"/>
