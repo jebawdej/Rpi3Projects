@@ -13,10 +13,10 @@
         <Canvas Height="737" Width="536" Name="MultiBoardPanel" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="86,-542,85,-543">
                 <Image Source="/Assets/MultiBoard.png" Height="727" Width="526" Canvas.Left="0" Canvas.Top="0" Canvas.ZIndex="0"></Image>
                 <Border Background="Black" Canvas.Left="130" Canvas.Top="52" Canvas.ZIndex="1">
-                    <TextBlock x:Name="LedDisplayBG"  Text="8888" Height="140" Width="301" FontFamily="Digital-7 Mono" FontSize="160" Foreground="DarkRed"/>
+                    <TextBlock x:Name="LedDisplayBG"  Text="8888" Height="140" Width="301" FontFamily="ms-appx:///Assets/Fonts/digital-7 (mono).TTF#Digital-7 Mono" FontSize="160" Foreground="DarkRed"/>
                 </Border>
                 <Border  Canvas.Left="130" Canvas.Top="52" Canvas.ZIndex="2">
-                    <TextBlock x:Name="LedDisplayFG"  Text="1234" Height="140" Width="301" FontFamily="Digital-7 Mono" FontSize="160" Foreground="Red"/>
+                    <TextBlock x:Name="LedDisplayFG"  Text="1234" Height="140" Width="301" FontFamily="ms-appx:///Assets/Fonts/digital-7 (mono).TTF#Digital-7 Mono" FontSize="160" Foreground="Red"/>
                 </Border>
                 <Ellipse Name="Buzzer" Height="100" Canvas.Left="149" Canvas.Top="339" Canvas.ZIndex="10" Width="100" Fill="Blue"/>
                 <Rectangle Name="LedD1" Height="10" Width="26" Canvas.Left="377" Canvas.Top="310" Canvas.ZIndex="10" Fill="LightGreen"/>
