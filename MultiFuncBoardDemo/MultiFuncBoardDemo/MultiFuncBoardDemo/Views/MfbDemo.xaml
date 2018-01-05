@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="MultiFuncBoardDemo.Views.MfbDemo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MultiFuncBoardDemo.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    DataContext="{Binding MfbDemoInstance, Source={StaticResource Locator}}"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Text="Multi Function IO-board demonstration" FontSize="30" HorizontalAlignment="Center" Margin="15"/>
+        <Viewbox Stretch="UniformToFill" Height="727" Width="526">
+        <Canvas Height="737" Width="536" Name="MultiBoardPanel" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="86,-542,85,-543">
+                <Image Source="/Assets/MultiBoard.png" Height="727" Width="526" Canvas.Left="0" Canvas.Top="0" Canvas.ZIndex="0"></Image>
+                <Border Background="Black" Canvas.Left="130" Canvas.Top="52" Canvas.ZIndex="1">
+                    <TextBlock x:Name="LedDisplayBG"  Text="8888" Height="140" Width="301" FontFamily="ms-appx:///Assets/Fonts/digital-7 (mono).TTF#Digital-7 Mono" FontSize="160" Foreground="DarkRed"/>
+                </Border>
+                <Border  Canvas.Left="130" Canvas.Top="52" Canvas.ZIndex="2">
+                    <TextBlock x:Name="LedDisplayFG"  Text="{Binding LedDisplayTxt}" Height="140" Width="301" FontFamily="ms-appx:///Assets/Fonts/digital-7 (mono).TTF#Digital-7 Mono" FontSize="160" Foreground="Red"/>
+                </Border>
+                <Ellipse Name="Buzzer" Height="100" Canvas.Left="149" Canvas.Top="339" Canvas.ZIndex="10" Width="100" Fill="{Binding BuzzerSoundFill}"/>
+                <Rectangle Name="LedD1" Height="10" Width="26" Canvas.Left="377" Canvas.Top="310" Canvas.ZIndex="10" Fill="{Binding LedD1StateFill}"/>
+                <Rectangle Name="LedD2" Height="10" Width="26" Canvas.Left="377" Canvas.Top="333" Canvas.ZIndex="10" Fill="{Binding LedD2StateFill}"/>
+                <Rectangle Name="LedD3" Height="10" Width="26" Canvas.Left="377" Canvas.Top="358" Canvas.ZIndex="10" Fill="{Binding LedD3StateFill}"/>
+                <Rectangle Name="LedD4" Height="10" Width="26" Canvas.Left="377" Canvas.Top="384" Canvas.ZIndex="10" Fill="{Binding LedD4StateFill}"/>
+                <Ellipse Name="SwitchS1" Height="38" Canvas.Left="87" Canvas.Top="623" Canvas.ZIndex="10" Width="37" Fill="{Binding SwitchS1PressedFill}"/>
+                <Ellipse Name="SwitchS2" Height="38" Canvas.Left="179" Canvas.Top="623" Canvas.ZIndex="10" Width="37" Fill="{Binding SwitchS2PressedFill}"/>
+                <Ellipse Name="SwitchS3" Height="38" Canvas.Left="273" Canvas.Top="623" Canvas.ZIndex="10" Width="37" Fill="{Binding SwitchS3PressedFill}"/>
+            </Canvas>
+        </Viewbox>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <TextBlock x:Name="DelayText"  Text="250ms" TextAlignment="Center" FontSize="26.667" />
+            <TextBlock x:Name="GpioStatus" HorizontalAlignment="Center" VerticalAlignment="Bottom" Text="GpioStatus: Waiting to initialize GPIO..." Margin="10,10,10,10" TextAlignment="Center" FontSize="26.667" />
+        </StackPanel>
+        <TextBlock Text="Created by: Wim de Jong" FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="25"/>
+    </Grid>
+</Page>
