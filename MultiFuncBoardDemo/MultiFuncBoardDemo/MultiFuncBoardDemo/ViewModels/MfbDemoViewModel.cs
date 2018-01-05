@@ -12,7 +12,7 @@ namespace MultiFuncBoardDemo.ViewModels
         SolidColorBrush _transpFill;
         public MfbDemoViewModel()
         {
-            _ledTrueFill = new SolidColorBrush(Colors.LightGreen);
+            _ledTrueFill = new SolidColorBrush(Colors.Red);
             _switchPressedFill = new SolidColorBrush(Colors.Red);
             _buzzerSoundFill = new SolidColorBrush(Colors.Blue);
             _transpFill = new SolidColorBrush(Colors.Transparent);
@@ -233,6 +233,7 @@ namespace MultiFuncBoardDemo.ViewModels
                 {
                     _buzzerSound = value;
                     BuzzerSoundFill = _buzzerSound ? _buzzerSoundFill : _transpFill;
+                    RaisePropertyChanged("BuzzerSound");
                 }
             }
         }
@@ -247,6 +248,21 @@ namespace MultiFuncBoardDemo.ViewModels
                 {
                     _buzzerFill = value;
                     RaisePropertyChanged("BuzzerSoundFill");
+                }
+            }
+        }
+
+        private string _ledDisplayTxt = "";
+        public string LedDisplayTxt
+        {
+            get
+            { return _ledDisplayTxt; }
+            set
+            {
+                if (_ledDisplayTxt != value)
+                {
+                    _ledDisplayTxt = value;
+                    RaisePropertyChanged("LedDisplayTxt");
                 }
             }
         }

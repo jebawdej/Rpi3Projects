@@ -17,7 +17,7 @@
                     <TextBlock x:Name="LedDisplayBG"  Text="8888" Height="140" Width="301" FontFamily="ms-appx:///Assets/Fonts/digital-7 (mono).TTF#Digital-7 Mono" FontSize="160" Foreground="DarkRed"/>
                 </Border>
                 <Border  Canvas.Left="130" Canvas.Top="52" Canvas.ZIndex="2">
-                    <TextBlock x:Name="LedDisplayFG"  Text="1234" Height="140" Width="301" FontFamily="ms-appx:///Assets/Fonts/digital-7 (mono).TTF#Digital-7 Mono" FontSize="160" Foreground="Red"/>
+                    <TextBlock x:Name="LedDisplayFG"  Text="{Binding LedDisplayTxt}" Height="140" Width="301" FontFamily="ms-appx:///Assets/Fonts/digital-7 (mono).TTF#Digital-7 Mono" FontSize="160" Foreground="Red"/>
                 </Border>
                 <Ellipse Name="Buzzer" Height="100" Canvas.Left="149" Canvas.Top="339" Canvas.ZIndex="10" Width="100" Fill="{Binding BuzzerSoundFill}"/>
                 <Rectangle Name="LedD1" Height="10" Width="26" Canvas.Left="377" Canvas.Top="310" Canvas.ZIndex="10" Fill="{Binding LedD1StateFill}"/>
@@ -29,6 +29,10 @@
                 <Ellipse Name="SwitchS3" Height="38" Canvas.Left="273" Canvas.Top="623" Canvas.ZIndex="10" Width="37" Fill="{Binding SwitchS3PressedFill}"/>
             </Canvas>
         </Viewbox>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <TextBlock x:Name="DelayText"  Text="250ms" TextAlignment="Center" FontSize="26.667" />
+            <TextBlock x:Name="GpioStatus" HorizontalAlignment="Center" VerticalAlignment="Bottom" Text="GpioStatus: Waiting to initialize GPIO..." Margin="10,10,10,10" TextAlignment="Center" FontSize="26.667" />
+        </StackPanel>
         <TextBlock Text="Created by: Wim de Jong" FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="25"/>
     </Grid>
 </Page>
