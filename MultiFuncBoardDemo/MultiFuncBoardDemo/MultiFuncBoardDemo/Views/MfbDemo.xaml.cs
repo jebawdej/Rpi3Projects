@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultiFuncBoardDemo.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +23,12 @@ namespace MultiFuncBoardDemo.Views
     /// </summary>
     public sealed partial class MfbDemo : Page
     {
+        MfbDemoViewModel vm;
         public MfbDemo()
         {
             this.InitializeComponent();
+            vm = (MfbDemoViewModel)DataContext;
+            vm.LedD1State = true;
         }
     }
 }
