@@ -27523,43 +27523,36 @@
     "UAP,Version=v10.0.10240": []
   },
   "packageFolders": {
-    "C:\\Users\\Wim\\.nuget\\packages\\": {}
+    "C:\\Users\\jeba_\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Wim\\Source\\Repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\basicUsage.csproj",
+      "projectUniqueName": "C:\\Users\\jeba_\\source\\repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\basicUsage.csproj",
       "projectName": "basicUsage",
-      "projectPath": "C:\\Users\\Wim\\Source\\Repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\basicUsage.csproj",
-      "projectJsonPath": "C:\\Users\\Wim\\Source\\Repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\project.json",
-      "packagesPath": "C:\\Users\\Wim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Wim\\Source\\Repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\obj\\",
+      "projectPath": "C:\\Users\\jeba_\\source\\repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\basicUsage.csproj",
+      "projectJsonPath": "C:\\Users\\jeba_\\source\\repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\project.json",
+      "packagesPath": "C:\\Users\\jeba_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jeba_\\source\\repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\obj\\",
       "projectStyle": "ProjectJson",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Wim\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\jeba_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       }
     },
     "dependencies": {
-      "Microsoft.ApplicationInsights": {
-        "target": "Package",
-        "version": "[2.5.0-beta2, )"
-      },
-      "Microsoft.ApplicationInsights.PersistenceChannel": {
-        "target": "Package",
-        "version": "[2.0.0-beta3, )"
-      },
-      "Microsoft.ApplicationInsights.WindowsApps": {
-        "target": "Package",
-        "version": "[1.1.1, )"
-      },
-      "Microsoft.NETCore.UniversalWindowsPlatform": {
-        "target": "Package",
-        "version": "[6.0.5, )"
-      }
+      "Microsoft.ApplicationInsights": "[2.5.0-beta2, )",
+      "Microsoft.ApplicationInsights.PersistenceChannel": "[2.0.0-beta3, )",
+      "Microsoft.ApplicationInsights.WindowsApps": "[1.1.1, )",
+      "Microsoft.NETCore.UniversalWindowsPlatform": "[6.0.5, )"
     },
     "frameworks": {
       "uap10.0.10240": {}
