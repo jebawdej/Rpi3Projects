@@ -14,10 +14,11 @@
                 <TextBlock x:Name="Text_A0_Value" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="A0: Not Initialized" VerticalAlignment="Top" Width="312" FontSize="26.667" Foreground="#FFC71818" TextAlignment="Center"/>
                 <TextBlock x:Name="Text_A1_Value" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="A1: Not Initialized" VerticalAlignment="Top" Width="312" FontSize="26.667" Foreground="#FF14D125" TextAlignment="Center"/>
                 <TextBlock x:Name="Text_A2_Value" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="A2: Not Initialized" VerticalAlignment="Top" Width="312" FontSize="26.667" Foreground="#FF1352C1" TextAlignment="Center"/>
-                <TextBlock x:Name="Text_A3_Value" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="A3: Not Initialized" VerticalAlignment="Top" Width="312" FontSize="26.667" Foreground="#FF1352C1" TextAlignment="Center"/>
+                <TextBlock x:Name="Text_A3_Value" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="A3: Not Initialized" VerticalAlignment="Top" Width="312" FontSize="26.667" Foreground="Gray" TextAlignment="Center"/>
 
                 <TextBlock x:Name="Text_Status" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Status: Initializing ..." VerticalAlignment="Top" Width="1004" FontSize="32" TextAlignment="Center"/>
             </StackPanel>
         </Viewbox>
+        <TextBlock Text="Created by: Wim de Jong" FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="25"/>
     </Grid>
 </Page>

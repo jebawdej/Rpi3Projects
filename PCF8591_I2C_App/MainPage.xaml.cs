@@ -48,18 +48,21 @@ namespace PCF8591_I2C_App
             try
             {
                 int value = ADConverter.ReadI2CAnalog(PCF8591_AnalogPin.A0);
-                A0Text = String.Format("A0: {0:F3}", value);
-                //A1Text = String.Format("A1: {0:F3}", value);
-                //A2Text = String.Format("A2: {0:F3}", value);
-                //A3Text = String.Format("A3: {0:F3}", value);
+                A0Text = String.Format("A0: {0:000}", value);
+                value = ADConverter.ReadI2CAnalog(PCF8591_AnalogPin.A1);
+                A1Text = String.Format("A1: {0:000}", value);
+                value = ADConverter.ReadI2CAnalog(PCF8591_AnalogPin.A2);
+                A2Text = String.Format("A2: {0:000}", value);
+                value = ADConverter.ReadI2CAnalog(PCF8591_AnalogPin.A3);
+                A3Text = String.Format("A3: {0:000}", value);
                 statusText = "Status: Running";
             }
             catch (Exception ex)
             {
                 A0Text = "A0: Error";
-                //A1Text = "A1: Error";
-                //A2Text = "A2: Error";
-                //A3Text = "A3: Error";
+                A1Text = "A1: Error";
+                A2Text = "A2: Error";
+                A3Text = "A3: Error";
                 statusText = "Failed to read from PCF8591: " + ex.Message;
             }
 
@@ -67,9 +70,9 @@ namespace PCF8591_I2C_App
             var task = this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
             {
                 Text_A0_Value.Text = A0Text;
-                //Text_A1_Value.Text = A1Text;
-                //Text_A2_Value.Text = A2Text;
-                //Text_A3_Value.Text = A3Text;
+                Text_A1_Value.Text = A1Text;
+                Text_A2_Value.Text = A2Text;
+                Text_A3_Value.Text = A3Text;
                 Text_Status.Text = statusText;
             });
         }
