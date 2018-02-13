@@ -27315,23 +27315,42 @@
     "UAP,Version=v10.0.10240": []
   },
   "packageFolders": {
-    "C:\\Users\\Wim\\.nuget\\packages\\": {}
+<<<<<<< HEAD
+    "C:\\Users\\wdjong\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\jeba_\\.nuget\\packages\\": {},
+>>>>>>> f63c4ef5f6bb7039428f39fae3225adc6b62ef5f
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Wim\\Source\\Repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\basicUsage.csproj",
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\wdjong\\source\\repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\basicUsage.csproj",
       "projectName": "basicUsage",
-      "projectPath": "C:\\Users\\Wim\\Source\\Repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\basicUsage.csproj",
-      "projectJsonPath": "C:\\Users\\Wim\\Source\\Repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\project.json",
-      "packagesPath": "C:\\Users\\Wim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Wim\\Source\\Repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\obj\\",
+      "projectPath": "C:\\Users\\wdjong\\source\\repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\basicUsage.csproj",
+      "projectJsonPath": "C:\\Users\\wdjong\\source\\repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\project.json",
+      "packagesPath": "C:\\Users\\wdjong\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\wdjong\\source\\repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\jeba_\\source\\repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\basicUsage.csproj",
+      "projectName": "basicUsage",
+      "projectPath": "C:\\Users\\jeba_\\source\\repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\basicUsage.csproj",
+      "projectJsonPath": "C:\\Users\\jeba_\\source\\repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\project.json",
+      "packagesPath": "C:\\Users\\jeba_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jeba_\\source\\repos\\Rpi3Projects\\Character-LCD-over-I2C-master\\examples\\basicUsage\\basicUsage\\obj\\",
+>>>>>>> f63c4ef5f6bb7039428f39fae3225adc6b62ef5f
       "projectStyle": "ProjectJson",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Wim\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+<<<<<<< HEAD
+        "C:\\Users\\wdjong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\jeba_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> f63c4ef5f6bb7039428f39fae3225adc6b62ef5f
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -27339,22 +27358,17 @@
       }
     },
     "dependencies": {
-      "Microsoft.ApplicationInsights": {
-        "target": "Package",
-        "version": "[2.5.0-beta2, )"
-      },
-      "Microsoft.ApplicationInsights.PersistenceChannel": {
-        "target": "Package",
-        "version": "[2.0.0-beta3, )"
-      },
-      "Microsoft.ApplicationInsights.WindowsApps": {
-        "target": "Package",
-        "version": "[1.1.1, )"
-      },
-      "Microsoft.NETCore.UniversalWindowsPlatform": {
-        "target": "Package",
-        "version": "[6.0.5, )"
-      }
+<<<<<<< HEAD
+      "Microsoft.ApplicationInsights": "[2.4.0, )",
+      "Microsoft.ApplicationInsights.PersistenceChannel": "[1.2.3, )",
+      "Microsoft.ApplicationInsights.WindowsApps": "[1.1.1, )",
+      "Microsoft.NETCore.UniversalWindowsPlatform": "[6.0.6, )"
+=======
+      "Microsoft.ApplicationInsights": "[2.5.0-beta2, )",
+      "Microsoft.ApplicationInsights.PersistenceChannel": "[2.0.0-beta3, )",
+      "Microsoft.ApplicationInsights.WindowsApps": "[1.1.1, )",
+      "Microsoft.NETCore.UniversalWindowsPlatform": "[6.0.5, )"
+>>>>>>> f63c4ef5f6bb7039428f39fae3225adc6b62ef5f
     },
     "frameworks": {
       "uap10.0.10240": {}

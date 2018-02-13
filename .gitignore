@@ -7,3 +7,6 @@ Character-LCD-over-I2C-master/examples/keyboardInput/.vs/
 MultiFuncBoardDemo/MultiFuncBoardDemo/MultiFuncBoardDemo/bin/
 MultiFuncBoardDemo/MultiFuncBoardDemo/MultiFuncBoardDemo/obj/
 MultiFuncBoardDemo/MultiFuncBoardDemo/.vs/
+PCF8591_I2C_App/obj/
+PCF8591_I2C_App/bin/
+SPIAccelerometer/obj/
