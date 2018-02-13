@@ -9,3 +9,5 @@ MultiFuncBoardDemo/MultiFuncBoardDemo/MultiFuncBoardDemo/obj/
 MultiFuncBoardDemo/MultiFuncBoardDemo/.vs/
 PCF8591_I2C_App/obj/
 PCF8591_I2C_App/bin/
+SPIAccelerometer/obj/
+SPIAccelerometer/bin/
