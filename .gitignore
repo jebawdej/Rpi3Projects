@@ -12,3 +12,5 @@ PCF8591_I2C_App/bin/
 SPIAccelerometer/obj/
 SPIAccelerometer/bin/
 PCF8591_I2C_App/.vs/
+SPIAccelerometer/.vs/Accelerometer/v15/Server/sqlite3/storage.ide-wal
+SPIAccelerometer/.vs/Accelerometer/v15/Server/sqlite3/storage.ide-shm
