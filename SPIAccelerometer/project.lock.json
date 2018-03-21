@@ -25570,29 +25570,29 @@
     "UAP,Version=v10.0.10240": []
   },
   "packageFolders": {
-    "C:\\Users\\Wim\\.nuget\\packages\\": {},
+    "C:\\Users\\jeba_\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Wim\\Source\\Repos\\Rpi3Projects\\SPIAccelerometer\\Accelerometer.csproj",
+      "projectUniqueName": "C:\\Users\\jeba_\\source\\repos\\Rpi3Projects\\SPIAccelerometer\\Accelerometer.csproj",
       "projectName": "Accelerometer",
-      "projectPath": "C:\\Users\\Wim\\Source\\Repos\\Rpi3Projects\\SPIAccelerometer\\Accelerometer.csproj",
-      "projectJsonPath": "C:\\Users\\Wim\\Source\\Repos\\Rpi3Projects\\SPIAccelerometer\\project.json",
-      "packagesPath": "C:\\Users\\Wim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Wim\\Source\\Repos\\Rpi3Projects\\SPIAccelerometer\\obj\\",
+      "projectPath": "C:\\Users\\jeba_\\source\\repos\\Rpi3Projects\\SPIAccelerometer\\Accelerometer.csproj",
+      "projectJsonPath": "C:\\Users\\jeba_\\source\\repos\\Rpi3Projects\\SPIAccelerometer\\project.json",
+      "packagesPath": "C:\\Users\\jeba_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jeba_\\source\\repos\\Rpi3Projects\\SPIAccelerometer\\obj\\",
       "projectStyle": "ProjectJson",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Wim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jeba_\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       }
     },
     "dependencies": {
